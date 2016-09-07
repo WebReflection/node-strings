@@ -1,0 +1,29 @@
+{
+  "name": "node-strings",
+  "version": "1.0.0",
+  "description": "The easiest way to have bold, underlined, or colored strings in node console",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/node-strings.git"
+  },
+  "keywords": [
+    "bold",
+    "underline",
+    "string",
+    "console",
+    "bash",
+    "color",
+    "blink",
+    "log"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebReflection/node-strings/issues"
+  },
+  "homepage": "https://github.com/WebReflection/node-strings#readme"
+}
