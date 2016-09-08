@@ -1,6 +1,6 @@
 # node-strings [![build status](https://travis-ci.org/WebReflection/node-strings.svg)](https://travis-ci.org/WebReflection/node-strings)
 
-This module is for pragmatic developers that need to easily and quickly enhance some [NodeJS](https://nodejs.org/) console log without strings attached.
+This module is for pragmatic developers that need to easily and quickly enhance some [NodeJS](https://nodejs.org/) console log.
 
 It's based on node core `util.inspect.colors` info, and it uses the ancient, obtrusive but handy technique of polluting `String.prototype` since it's full of trash anyway thanks to early Web days ...
 
@@ -15,10 +15,12 @@ If like me you just need to debug or temporarily enhance some string in console,
 
 You can use, combine, and chain any of the following methods:
 
-  * `str.blink()` to create a text that blinks
-  * `str.hidden()` to create hidden text (passwords and stuff)
+  * `str.italic()` to make some text italic <sup><sub>(Linux)</sub></sup>
+  * `str.strike()` to strike through some text <sup><sub>(Linux)</sub></sup>
+  * `str.hidden()` to create hidden text <sup><sub>(Linux, Mac)</sub></sup>
+  * `str.underline()` to underline some text <sup><sub>(Linux, Mac)</sub></sup>
+  * `str.blink()` to create a text that blinks <sup><sub>(Mac, highlighted on Win)</sub></sup>
   * `str.bold()` to make some text bold
-  * `str.underline()` to underline some text
   * `str.inverse()` to invert background and foreground colors
   * `str.white()` to use white as color
   * `str.grey()` to use grey as color
@@ -29,8 +31,6 @@ You can use, combine, and chain any of the following methods:
   * `str.magenta()` to use magenta as color
   * `str.red()` to use red as color
   * `str.yellow()` to use yellow as color
-  * `str.strike()` to strike through some text (not fully cross platform)
-  * `str.italic()` to make some text italic (not fully cross platform)
 
 In alternative, you can use the returned object as generic transformer:
 ```js
