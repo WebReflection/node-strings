@@ -20,7 +20,8 @@ Object.keys(colors).forEach(function (key) {
 Object.keys(extras).forEach(function (key) {
     var
         prefix = '\x1B[' + extras[key][0] + 'm',
-        suffix = '\x1B[' + extras[key][1] + 'm'
+        suffix = '\x1B[' + extras[key][1] + 'm',
+        method = String.prototype[key]
     ;
     function override() {
         return transformer(this);
@@ -29,13 +30,14 @@ Object.keys(extras).forEach(function (key) {
         return prefix + String(value) + suffix;
     }
     transformer.boundaries = [prefix, suffix];
-    override.original = String.prototype[key];
+    transform[key] = transformer;
+    override.original = method;
+    if (method && method.original) return;
     defineProperty(String.prototype, key, {
         configurable: true,
         writable: true,
         value: override
     });
-    transform[key] = transformer;
 });
 
 transform.clean = function (value) {
