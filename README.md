@@ -1,5 +1,11 @@
 # node-strings [![build status](https://travis-ci.org/WebReflection/node-strings.svg)](https://travis-ci.org/WebReflection/node-strings)
 
+## new [echomd](https://github.com/WebReflection/echomd) alternative
+if you want to have Markdown like text with colors and backgrounds without polluting global strings,
+don't miss `echomd` *native Perl* or *NodeJS* module.
+
+- - - - - - - - -
+
 This module is for pragmatic developers that need to easily and quickly enhance some [NodeJS](https://nodejs.org/) console log.
 
 It's based on node core `util.inspect.colors` info, and it uses the ancient, obtrusive but handy technique of polluting `String.prototype` since it's full of trash anyway thanks to early Web days ...
