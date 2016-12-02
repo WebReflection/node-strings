@@ -1,8 +1,8 @@
 # node-strings [![build status](https://travis-ci.org/WebReflection/node-strings.svg)](https://travis-ci.org/WebReflection/node-strings)
 
-## new [echomd](https://github.com/WebReflection/echomd) alternative
+## new [consolemd](https://github.com/WebReflection/consolemd) alternative
 if you want to have Markdown like text with colors and backgrounds without polluting global strings,
-don't miss `echomd` *native Perl* or *NodeJS* module.
+don't miss the `consolemd` module.
 
 - - - - - - - - -
 
